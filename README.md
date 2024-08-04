@@ -1,36 +1,133 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js 버전
 
-## Getting Started
+해당 문서는 24.08.04 기준 Next.js v14.2.5에 해당하는 내용입니다.
 
-First, run the development server:
+직접 번역했으나 일부 내용은 번역기의 힘을 빌려서 부자연스러울수도 있습니다.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Next.js를 공부할 겸 두고두고 볼려고 만든 번역본 입니다.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+정확한 내용은 [공식문서](https://nextjs.org)를 참조하는걸 추천드립니다.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+마이그레이션 등 일부 내용은 TODO 플래그로 표시되어 있습니다.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<br/>
 
-## Learn More
+# 목차
 
-To learn more about Next.js, take a look at the following resources:
+목차는 Next.js의 공식문서와 동일한 목차로 구성되어 있습니다.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<br/>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 1. 시작하기
 
-## Deploy on Vercel
+1. [Next.js 설치](/docs/1.%20시작하기/설치하기.md)
+2. [프로젝트 구조](/docs/1.%20시작하기/프로젝트%20구조.md)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<br/>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 2. 라우팅
+
+1. [라우터 정의하기](/docs/2.%20라우팅/라우터%20정의하기.md)
+2. [페이지와 레이아웃](/docs/2.%20라우팅/페이지와%20레이아웃.md)
+3. [링크와 네비게이터](/docs/2.%20라우팅/링크와%20네비게이터.md)
+4. [로딩 UI와 스트리밍](/docs/2.%20라우팅/로딩%20UI와%20스트리밍.md)
+5. [에러 처리하기](/docs/2.%20라우팅/에러핸들링.md)
+6. [리다이렉트](/docs/2.%20라우팅/리다이렉트.md)
+7. [라우터 그룹핑](/docs/2.%20라우팅/라우터%20그룹.md)
+8. [프로젝트 및 파일구조](/docs/2.%20라우팅/프로젝트%20및%20파일%20구조.md)
+9. [동적 라우팅](/docs/2.%20라우팅/동적라우팅.md)
+10. [병렬 라우팅](/docs/2.%20라우팅/병렬라우팅.md)
+11. [인터셉트 라우팅](/docs/2.%20라우팅/인터셉트라우팅.md)
+12. [라우트 핸들러](/docs/2.%20라우팅/라우트핸들러.md)
+13. [미들웨어](/docs/2.%20라우팅/미들웨어.md)
+14. [국제화](/docs/2.%20라우팅/국제화.md)
+
+<br/>
+
+## 3. 데이터 가져오기
+
+1. [데이터 가져오기, 캐싱, 갱신](/docs/3.%20데이터%20가져오기/데이터%20로딩,%20캐싱,%20갱신.md)
+2. [서버 액션과 뮤테이션](/docs/3.%20데이터%20가져오기/서버액션과%20뮤테이션.md)
+3. [데이터 로딩 패턴과 좋은 예시들](/docs/3.%20데이터%20가져오기/데이터%20로딩%20패턴과%20베스트%20사례.md)
+
+<br/>
+
+## 4. 렌더링
+
+1. [서버 컴포넌트](/docs/4.%20렌더링/서버%20컴포넌트.md)
+2. [클라이언트 컴포넌트](/docs/4.%20렌더링/클라이언트%20컴포넌트.md)
+3. [컴포지트 패턴](/docs/4.%20렌더링/컴포지트%20패턴.md)
+4. [Node.js와 Edge 런타임](/docs/4.%20렌더링/Node.js와%20Edge%20런타임.md)
+
+<br/>
+
+## 5. 캐싱
+
+1. [캐싱](/docs/5.%20캐싱/캐싱.md)
+
+<br/>
+
+## 6. 스타일링
+
+1. [CSS Modules](/docs/6.%20스타일링/CSS%20Module.md)
+2. [Tailwind CSS](/docs/6.%20스타일링/Tailwind%20CSS.md)
+3. [CSS-in-JS](/docs/6.%20스타일링/CSS-in-JS.md)
+4. [Sass](/docs/6.%20스타일링/SASS.md)
+
+<br/>
+
+## 7. 최적화
+
+1. [이미지](/docs/7.%20최적화/이미지.md)
+2. [비디오](/docs/7.%20최적화/비디오.md)
+3. [폰트](/docs/7.%20최적화/폰트.md)
+4. [메타데이터](/docs/7.%20최적화/메타데이터.md)
+5. [스크립트](/docs/7.%20최적화/스크립트.md)
+6. [번들 분석기](/docs/7.%20최적화/번들러%20분석기.md)
+7. [지연 로딩](/docs/7.%20최적화/지연로딩.md)
+8. [분석](/docs/7.%20최적화/분석.md)
+9. [성능지표 도구](/docs/7.%20최적화/성능,%20지표%20분석도구.md)
+10. [오픈텔레메트리](/docs/7.%20최적화/오픈텔레메트리.md)
+11. [정적 에셋](/docs/7.%20최적화/정적에셋.md)
+12. [서드 파티 라이브러리들](/docs/7.%20최적화/서드%20파티%20라이브러리.md)
+13. [메모리 사용량](/docs/7.%20최적화/메모리%20사용량.md)
+
+<br/>
+
+## 8. 설정
+
+1. [타입스크립트](/docs/8.%20설정/타입스크립트.md)
+2. [ESLint](/docs/8.%20설정/ESLint.md)
+3. [환경변수](/docs/8.%20설정/ESLint.md)
+4. [절대경로 불러오기와 모듈 경로 별칭](/docs/8.%20설정/절대경로%20참조와%20모듈%20경로%20별칭.md)
+5. [MDX](/docs/8.%20설정/MDX.md)
+6. [src 폴더](/docs/8.%20설정/src%20폴더.md)
+7. [Draft 모드(미완성)](/docs/8.%20설정/draft%20mode.md)
+8. [콘텐츠 보안 정책](/docs/8.%20설정/콘텐츠%20보안%20정책.md)
+
+<br/>
+
+## 9. 테스트
+
+1. [Vitest](/docs/9.%20테스트/vitest.md)
+2. [Jest](/docs/9.%20테스트/jest.md)
+3. [Playwright](/docs/9.%20테스트/playwright.md)
+4. [Cypress(미완성)](/docs/9.%20테스트/cypress.md)
+
+<br/>
+
+## 10. 인증
+
+1. [인증](/docs/10.%20인증/인증.md)
+
+<br/>
+
+## 11. [배포](/docs/11.%20배포/배포.md)
+
+1. [프로덕션 배포전 점검목록](/docs/11.%20배포/프로덕션%20채크리스트.md)
+2. [정적 내보내기](/docs/11.%20배포/정적%20내보내기.md)
+3. [다중 Zone](/docs/11.%20배포/다중%20존.md)
+
+<br/>
+
+## 12. 업그레이드(미완성)
