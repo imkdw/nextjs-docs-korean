@@ -60,7 +60,7 @@ Strict 또는 Base 옵션을 선택하게되면 Next.js가 앱의 종속성으�
   - eslint-plugin-react-hooks
   - eslint-plugin-next
 
-위 설정들은 `next.config.ts` 보다 우선순위가 높음
+위 설정들은 `next.config.mjs` 보다 우선순위가 높음
 
 <br/>
 
@@ -93,7 +93,7 @@ DOCS : https://nextjs.org/docs/app/building-your-application/configuring/eslint#
 # 커스텀 폴더와 파일 린팅하기
 
 - 기본적으로 Next.js는 `pages/`, `app/`, `components/`, `lib/`, `src/` 폴더에 있는 모든 파일에 대해서 린트를 검사함
-- 하지만 프로덕션 빌드의 경우 `next.config.ts`의 eslint 구성에서 `dirs` 옵션을 사용해서 실행할 폴더 지정이 가능함
+- 하지만 프로덕션 빌드의 경우 `next.config.mjs`의 eslint 구성에서 `dirs` 옵션을 사용해서 실행할 폴더 지정이 가능함
 
 ```ts
 module.exports = {

@@ -22,7 +22,7 @@
 # `app`에서 CSS-in-JS 설정하기
 
 1. 렌더링의 모든 CSS 규칙을 수집하는 Style Registry 정의
-2. 규칙을 사용할 수 있는 컨텐츠보다 먼저 규칙을 주입하기 위한 `useServerInsertedHTML Hook` 사용
+2. 규칙을 사용할 수 있는 콘텐츠보다 먼저 규칙을 주입하기 위한 `useServerInsertedHTML Hook` 사용
 3. 초기 서버 사이드 렌더링 중에 Style Registry로 App을 감싸는 클라이언트 컴포넌트 정의
 
 ### `styled-jsx`
@@ -72,7 +72,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 ### Styled Components
 
 - `styled-component` 는 6 또는 그 이상의 버전을 사용하는것을 권장
-- 우선 `next.config.ts` 에서 옵션을 활성화함
+- 우선 `next.config.mjs` 에서 옵션을 활성화함
 
 ```ts
 module.exports = {

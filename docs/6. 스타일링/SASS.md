@@ -13,7 +13,7 @@ npm install --save-dev sass
 
 # Sass 옵션 커스텀하기
 
-- 만약 옵션을 커스텀 해야하는 경우 `next.config.ts` 에다가 `sassOptions` 를 사용함
+- 만약 옵션을 커스텀 해야하는 경우 `next.config.mjs` 에다가 `sassOptions` 를 사용함
 
 ```ts
 const path = require("path");
